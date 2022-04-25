@@ -5,13 +5,13 @@ var config = {
     markerColor: '#3FB1CE',
     projection: 'equalEarth',
     inset: false,
-    theme: 'dark',
+    theme: 'light',
     use3dTerrain: false, //set true for enabling 3D maps.
     header: {
         nl: {
             title: 'De weg naar een wereldhaven',
             subtitle: 'Hier kan nog een subtitle komen',
-            byline: 'Aangeboden door xxxxxx',
+            byline: 'Een initiatief van Port of Antwerp Bruges',
             footer: 'Footer content NL'
         },
         fr: {
@@ -24,11 +24,11 @@ var config = {
     title: 'The Title Text of this Story',
     subtitle: 'A descriptive and interesting subtitle to draw in the reader',
     byline: 'By a Digital Storyteller',
-    footer: 'Source: source citations, etc. <br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
+    footer: 'Bronnen.',
     chapters: [
         {
             id: 'intro',
-            alignment: 'left',
+            alignment: 'fully',
             hidden: false,
             title: {
                 nl: 'Titeltje',
@@ -51,11 +51,11 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 1,
-                //     duration: 5000
-                // }
+                 {
+                    layer: 'satellite',
+                    opacity: 1,
+                    duration: 5000
+                 }
             ],
             onChapterExit: [
                 // {
@@ -66,7 +66,7 @@ var config = {
         },
         {
             id: 'world-ports',
-            alignment: 'right',
+            alignment: 'center',
             hidden: false,
             title: {
                 nl: 'Titeltje',
@@ -85,7 +85,7 @@ var config = {
                 // These options control the flight curve, making it move
                 // slowly and zoom out almost completely before starting
                 // to pan.
-                //speed: 2, // make the flying slow
+                speed: 0.5, // make the flying slow
                 //curve: 1, // change the speed at which it zooms out
             },
             mapAnimation: 'flyTo',
@@ -103,7 +103,13 @@ var config = {
                     opacity: 1,
                     strokeOpacity: 1,
                     duration: 2000
+                 },
+                 {
+                    layer: 'satellite',
+                    opacity: 0.5,
+                    duration: 5000
                  }
+
             ],
             onChapterExit: [
                  {
@@ -142,14 +148,24 @@ var config = {
                    opacity: 0.7,
                    strokeOpacity: 1,
                    duration: 500
-                }
+                },
+                {
+                    layer: 'ports-labels',
+                    opacity: 1,
+                    duration: 500
+                 }
            ],
            onChapterExit: [
                 {
                     layer: 'ports-01ktls',
                     opacity: 0,
                     duration: 500
-                }
+                },
+                {
+                    layer: 'ports-labels',
+                    opacity: 0,
+                    duration: 500
+                 }
            ],
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -187,6 +203,11 @@ var config = {
                     layer: 'havengebied-5djnsq-fill',
                     opacity: 0.15,
                     duration: 500
+                 },
+                 {
+                    layer: 'satellite',
+                    opacity: 1,
+                    duration: 2000
                  }
            ],
            onChapterExit: [
@@ -194,7 +215,7 @@ var config = {
         },
         {
             id: 'port-bruges',
-            alignment: 'fully',
+            alignment: 'center',
             hidden: false,
             title: {
                 nl: 'Titeltje',
@@ -206,12 +227,12 @@ var config = {
             },
             location: {
                 center: [3.2102606,51.3301086],
-                zoom: 14,
+                zoom: 13,
                 pitch: 45,
                 bearing: 0
             },
             mapAnimation: 'flyTo',
-            rotateAnimation: false,
+            rotateAnimation: true,
             callback: '',
             onChapterEnter: [],
             onChapterExit: []
@@ -243,16 +264,17 @@ var config = {
         },
         {
             id: 'outro',
-            alignment: 'fully',
+            alignment: 'full',
             hidden: false,
             title: {
                 nl: 'Tegen 2050 bouwt Port of Antwerp-Bruges de CO2-uitstoot helemaal af',
                 fr: 'Petit titre'
             },
             description: {
-                nl: '1. Windparken op zee wekken groene stroom op. Lokale productie wordt aangevuld met buitenlandse import van waterstof en waterstofdragers. 2. Op de site van Zeebrugge wordt de groene waterstof overgeslagen en omgezet.  3. Via een uitgebreide pijplijninfrastructuur gaat het van Zeebrugge naar Antwerpen. 4. Het havengebied in Antwerpen is dé plaats waar de energietransitie vorm krijgt. Waterstof en waterstofdragers worden ingevoerd, opgeslagen en omgezet naar bouwstenen voor de chemische sector. 5. CO2 wordt getransporteerd van en naar de haven',
+                nl: 'Tekst NL',
                 fr: 'Texte FR'
             },
+            image: './../assets/ports-stroomschema.png',
             bounds: [[2.8, 50.7],[5, 51.5]],
             location: {
                 center: [-58.54195, -34.71600],

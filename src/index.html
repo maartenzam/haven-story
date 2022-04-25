@@ -25,6 +25,9 @@
       sizes="192x192"
       href="https://cdn.uc.assets.prezly.com/35199154-650e-4754-b1b1-d219eb3d4ac6/-/crop/372x372/14,0/-/preview/-/preview/192x192/"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
     <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js"></script>
     <link
       href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css"
@@ -36,7 +39,7 @@
       body {
         margin: 0;
         padding: 0;
-        font-family: sans-serif;
+        font-family: 'Roboto', sans-serif;
       }
       a,
       a:hover,
@@ -66,6 +69,8 @@
         width: 100%;
         position: relative;
         z-index: 5;
+        box-shadow: 0px 3px 15px rgba(255,255,255,0.5);
+        background-color: #E4032C;
       }
       #header h1,
       #header h2,
@@ -73,6 +78,8 @@
         margin: 0;
         padding: 2vh 2vw;
         text-align: center;
+        /*color: #E4032C;*/
+        color: #ffffff;
       }
       #footer {
         width: 100%;
@@ -109,8 +116,10 @@
         margin: auto;
       }
       .light {
-        color: #444;
-        background-color: #fafafa;
+        color: #515151;
+        /*background-color: #fafafa;
+        background-color: #FDF7EB;*/
+        background-color: #ffffff;
       }
       .dark {
         color: #fafafa;
@@ -126,9 +135,14 @@
       }
 
       .step div {
-        padding: 25px 50px;
+        padding: 16px;
         line-height: 25px;
-        font-size: 13px;
+        border-radius: 2px;
+        box-shadow: 0px 3px 15px rgba(255,255,255,0.5);
+      }
+
+      .step h1, .step h2, .step h3 {
+        color: #E4032C;
       }
 
       .step img {
@@ -266,7 +280,7 @@
 
       if (config.footer) {
         var footerText = document.createElement("p");
-        footerText.innerHTML = config.footer;
+        footerText.innerHTML = config.header[lang].footer;
         footer.appendChild(footerText);
       }
 
@@ -278,7 +292,7 @@
 
       mapboxgl.accessToken = config.accessToken;
 
-      const transformRequest = (url) => {
+      /*const transformRequest = (url) => {
         const hasQuery = url.indexOf("?") !== -1;
         const suffix = hasQuery
           ? "&pluginName=scrollytellingV2"
@@ -286,7 +300,7 @@
         return {
           url: url + suffix,
         };
-      };
+      };*/
 
       var map = new mapboxgl.Map({
         container: "map",
@@ -301,7 +315,7 @@
         ],
         fitBoundsOptions: { padding: 10 },
         interactive: false,
-        transformRequest: transformRequest,
+        //transformRequest: transformRequest,
         projection: config.projection,
       });
 
@@ -369,6 +383,7 @@
               (chap) => chap.id === response.element.id
             );
             response.element.classList.add("active");
+
             if (chapter.bounds) {
               map.fitBounds(chapter.bounds);
             } else {
