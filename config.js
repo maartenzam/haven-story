@@ -274,7 +274,7 @@ var config = {
                 nl: 'Tekst NL',
                 fr: 'Texte FR'
             },
-            image: './../assets/ports-stroomschema.png',
+            image: './images/ports-stroomschema.png',
             bounds: [[2.8, 50.7],[5, 51.5]],
             location: {
                 center: [-58.54195, -34.71600],
