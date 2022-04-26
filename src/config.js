@@ -1,6 +1,6 @@
 var config = {
-    style: 'mapbox://styles/rope/cl2eof07k000114qtzvdp5tcf/draft',
-    accessToken: 'pk.eyJ1Ijoicm9wZSIsImEiOiJjajEyaGcxbW8wMDZnMndrMzk5Z3E4MmN4In0.Fp9RqKgp4GgSnfK076V1Fw',
+    style: 'mapbox://styles/mediafin/cl2g9lxxj000v15nz6u1a94ld/draft',
+    accessToken: 'pk.eyJ1IjoibWVkaWFmaW4iLCJhIjoiaTQ3REl2cyJ9.7A3ClfiCGzqieni6ui9TCA',
     showMarkers: false,
     markerColor: '#3FB1CE',
     projection: 'equalEarth',
@@ -144,7 +144,7 @@ var config = {
             },
             onChapterEnter: [
                 {
-                   layer: 'ports-01ktls',
+                   layer: 'ports',
                    opacity: 0.7,
                    strokeOpacity: 1,
                    duration: 500
@@ -157,7 +157,7 @@ var config = {
            ],
            onChapterExit: [
                 {
-                    layer: 'ports-01ktls',
+                    layer: 'ports',
                     opacity: 0,
                     duration: 500
                 },
@@ -194,13 +194,13 @@ var config = {
             callback: '',
             onChapterEnter: [
                 {
-                   layer: 'havengebied-5djnsq-line',
+                   layer: 'havengebied-line',
                    opacity: 1,
                    strokeOpacity: 1,
                    duration: 500
                 },
                 {
-                    layer: 'havengebied-5djnsq-fill',
+                    layer: 'havengebied-fill',
                     opacity: 0.15,
                     duration: 500
                  },
