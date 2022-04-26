@@ -99,12 +99,6 @@ var config = {
                     duration: 2000
                  },
                  {
-                    layer: 'data-driven-circles-labels',
-                    opacity: 1,
-                    strokeOpacity: 1,
-                    duration: 2000
-                 },
-                 {
                     layer: 'satellite',
                     opacity: 0.5,
                     duration: 5000
@@ -119,6 +113,11 @@ var config = {
                  },
                  {
                     layer: 'data-driven-circles-labels',
+                    opacity: 0,
+                    duration: 500
+                 },
+                 {
+                    layer: 'data-driven-circles-labels-fr',
                     opacity: 0,
                     duration: 500
                  }

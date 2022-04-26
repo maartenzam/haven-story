@@ -91,6 +91,8 @@
         font-size: 13px;
         position: relative;
         z-index: 5;
+        background-color: #E4032C;
+        color: #ffffff;
       }
       #features {
         padding-top: 10vh;
@@ -223,6 +225,13 @@
         lang = "fr";
       }
 
+      config.chapters[1].onChapterEnter.push({
+                    layer: lang == "fr" ? 'data-driven-circles-labels-fr' : 'data-driven-circles-labels',
+                    opacity: 1,
+                    strokeOpacity: 1,
+                    duration: 2000
+                 });
+
       var titleText = document.createElement("h1");
       titleText.innerText = config.header[lang].title;
       header.appendChild(titleText);
@@ -345,6 +354,13 @@
       var scroller = scrollama();
 
       map.on("load", function () {
+        if(lang == "fr"){
+          map.setLayoutProperty('country-label', 'text-field', ['get','name_fr'])
+          map.setLayoutProperty('state-label', 'text-field', ['get','name_fr'])
+          map.setLayoutProperty('settlement-major-label', 'text-field', ['get','name_fr'])
+          map.setLayoutProperty('settlement-minor-label', 'text-field', ['get','name_fr'])
+          map.setLayoutProperty('settlement-subdivision-label', 'text-field', ['get','name_fr'])
+        }
         if (config.use3dTerrain) {
           map.addSource("mapbox-dem", {
             type: "raster-dem",
