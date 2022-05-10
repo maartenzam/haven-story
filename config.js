@@ -31,11 +31,11 @@ var config = {
             alignment: 'fully',
             hidden: false,
             title: {
-                nl: 'Titeltje',
+                nl: 'Titeltje?',
                 fr: 'Petit titre'
             },
             description: {
-                nl: 'Met een totale doorvoer van 288 miljoen ton per jaar vormt Port of Antwerp-Bruges een belangrijk knooppunt in de wereldwijde handel. De centrale ligging, de uitgebreide verbindingen en uitstekende infrastructuur maken de haven met haar twee sites een optimale keuze voor iedereen die zaken wil doen',
+                nl: 'Met een doorvoer van 289 miljoen ton per jaar vormt Port of Antwerp-Bruges een belangrijk knooppunt in de wereldwijde handel. Zijn centrale ligging met uitgebreide verbindingen en uitstekende infrastructuur maken de haven met zijn twee sites een optimale keuze voor iedereen die internationaal zaken wil doen.',
                 fr: 'Texte en francais'
             },
             location: {
@@ -69,11 +69,11 @@ var config = {
             alignment: 'center',
             hidden: false,
             title: {
-                nl: 'Titeltje',
+                nl: 'Diep met het Europese hinterland verbonden',
                 fr: 'Petit titre'
             },
             description: {
-                nl: 'Meer dan 80 procent van de wereldhandel verloopt vandaag via de zee. Geen enkele andere zeehaven ligt zo diep in Europa als Port of Antwerp-Bruges. Zo vormt ze de snelste en goedkoopste verbinding met het Europese achterland en is ze ook nog eens ecologisch een verantwoorde keuze.',
+                nl: 'Meer dan 80 procent van de wereldhandel verloopt via de zee. Geen enkele andere zeehaven ligt zo diep in Europa als Port of Antwerp-Bruges. Daarmee vormt hij de snelste en goedkoopste verbinding met het Europese achterland en is hij ook nog eens ecologisch een verantwoorde keuze.',
                 fr: 'Texte FR'
             },
             location: {
@@ -128,11 +128,11 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: {
-                nl: 'Titeltje',
+                nl: 'Europeaan op lange Aziatische lijst',
                 fr: 'Petit titre'
             },
             description: {
-                nl: 'De nieuwe fusiehaven wordt de grootste containerhaven in Europa (in tonnage) en komt in de wereldtop op de 13e plaats te staan. ’s Werelds drukste containerhavens liggen in Azië, met Shanghai op kop.',
+                nl: 'De nieuwe fusiehaven wordt de grootste Europese exporthaven en is de veertiende containerhaven in de wereld (in TEU). Daarmee neemt Port of Antwerp-Bruges een opvallende plek in op de lijst van wereldhavens, die wordt gedomineerd door spelers in Azië, met Shanghai op kop.',
                 fr: 'Texte FR'
             },
             location: {
@@ -175,16 +175,16 @@ var config = {
             alignment: 'fully',
             hidden: false,
             title: {
-                nl: 'Titeltje',
+                nl: 'Twee economische motoren',
                 fr: 'Petit titre'
             },
             description: {
-                nl: 'Kerncijfers haven van Antwerpen',
+                nl: 'De site in Antwerpen beslaat 11.246 hectare, dat zijn 16.600 voetbalvelden, en daarop zijn 900 bedrijven gevestigd, goed voor 62.635 rechtstreekse banen. Dat levert een toegevoegde waarde van bijna 19 miljard euro op, goed voor 4,1 procent van het Vlaamse bbp.',
                 fr: 'Texte FR'
             },
             location: {
-                center: [4.3450253,51.257196],
-                zoom: 12,
+                center: [4.27,51.27],
+                zoom: 11.5,
                 pitch: 45,
                 bearing: 0
             },
@@ -193,14 +193,14 @@ var config = {
             callback: '',
             onChapterEnter: [
                 {
-                   layer: 'havengebied-line',
+                   layer: 'havengebied-antwerpen-line',
                    opacity: 1,
                    strokeOpacity: 1,
                    duration: 500
                 },
                 {
-                    layer: 'havengebied-fill',
-                    opacity: 0.15,
+                    layer: 'havengebied-antwerpen-fill',
+                    opacity: 0.3,
                     duration: 500
                  },
                  {
@@ -217,23 +217,40 @@ var config = {
             alignment: 'center',
             hidden: false,
             title: {
-                nl: 'Titeltje',
+                nl: 'Twee economische motoren',
                 fr: 'Petit titre'
             },
             description: {
-                nl: 'Kerncijfers haven van Zeebrugge',
+                nl: 'De site in Brugge beslaat 2.857 hectare, dat zijn 4.220 voetbalvelden, en daarop zijn 400 bedrijven gevestigd, goed voor 10.000 rechtstreekse banen. Dat levert een toegevoegde waarde van bijna 1,8 miljard euro op, goed voor 0,4 procent van het Vlaamse bbp.',
                 fr: 'Texte FR'
             },
             location: {
                 center: [3.2102606,51.3301086],
-                zoom: 13,
+                zoom: 12,
                 pitch: 45,
                 bearing: 0
             },
             mapAnimation: 'flyTo',
             rotateAnimation: true,
             callback: '',
-            onChapterEnter: [],
+            onChapterEnter: [
+                {
+                   layer: 'havengebied-zeebrugge-line',
+                   opacity: 1,
+                   strokeOpacity: 1,
+                   duration: 500
+                },
+                {
+                    layer: 'havengebied-zeebrugge-fill',
+                    opacity: 0.3,
+                    duration: 500
+                 },
+                 {
+                    layer: 'satellite',
+                    opacity: 1,
+                    duration: 2000
+                 }
+           ],
             onChapterExit: []
         },
         {
@@ -241,11 +258,36 @@ var config = {
             alignment: 'fully',
             hidden: false,
             title: {
-                nl: 'Titeltje',
+                nl: 'Een enorme toegevoegde waarde',
                 fr: 'Petit titre'
             },
             description: {
-                nl: 'Port of Antwerp-Bruges beschikt over een uitstekende infrastructuur voor alle vormen van transport en goederen, snel en efficiënt en duurzaam naar, van en in de havensites. Deepsea double call, Binnenvaart, Spoorweg, Pijpleidingen, E34 snelweg',
+                nl: 'Port of Antwerp-Bruges beslaat 14.322 hectare, dat zijn 20.820 voetbalvelden, en daarop zijn 1.400 bedrijven gevestigd die 164.000 directe en indirecte banen opleveren. Samen levert dat een toegevoegde waarde van 20,8 miljard euro op, goed voor 4,5 procent van het Vlaamse bbp.',
+                fr: 'Texte FR'
+            },
+            bounds: [[2.8, 50.7],[5, 51.5]],
+            location: {
+                center: [-58.54195, -34.71600],
+                zoom: 4,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        {
+            id: 'ports-together-2',
+            alignment: 'fully',
+            hidden: false,
+            title: {
+                nl: 'Uitstekend vertakt naar binnen- en buitenland',
+                fr: 'Petit titre'
+            },
+            description: {
+                nl: 'In Port of Antwerp-Bruges vind je een unieke mix van bevoorrading, maritiem transport en industrie. In Zeebrugge komt 15 procent van het Europese gas aan, naast kiwi’s, auto’s, windturbines, verse vis, ferry- en cruiseverkeer. In Antwerpen gaat het over cacao, koffie, staal, boomstammen, papier, mout, bananen, alles in containers (tuinmeubelen, kleding, elektronica, bouwmaterialen, …), plastic pellets, medicijnen, vaccins, enz. Bovendien beschikt Port of Antwerp over een unieke mulitmodale mix voor duurzaam goederenvervoer van, naar en in de beide havensites. Dat gaat zowel over zee, langs binnenwateren, estuaire vaart, spoorwegen, pijpleiding en over de weg.',
                 fr: 'Texte FR'
             },
             bounds: [[2.8, 50.7],[5, 51.5]],
@@ -270,7 +312,7 @@ var config = {
                 fr: 'Petit titre'
             },
             description: {
-                nl: 'Tekst NL',
+                nl: "1. Windparken op zee wekken groene stroom op. Naast de lokale productie komt daar de buitenlandse import van waterstof en waterstofdragers bij. 2. De site van Zeebrugge is belangrijk om groene waterstof over te slaan en om te zetten. 3. Via een uitgebreide pijplijninfrastructuur gaat ze van Zeebrugge naar Antwerpen. 3. Het havengebied in Antwerpen is dé plaats waar de energietransitie vorm krijgt. Het voert waterstof en waterstofdragers in, slaat ze op en zet ze om naar bouwstenen voor de chemische sector en voor het Europese hinterland. 4. Afgevangen CO2 wordt opgeslagen en getransporteerd van het hinterland en de chemische cluster in Antwerpen naar lege gasvelden in de Noordzee.",
                 fr: 'Texte FR'
             },
             image: './images/ports-stroomschema.png',
