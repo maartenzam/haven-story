@@ -240,9 +240,9 @@
       subtitleText.innerText = config.header[lang].subtitle;
       header.appendChild(subtitleText);
 
-      var bylineText = document.createElement("p");
+      /*var bylineText = document.createElement("p");
       bylineText.innerText = config.header[lang].byline;
-      header.appendChild(bylineText);
+      header.appendChild(bylineText);*/
 
       if (header.innerText.length > 0) {
         header.classList.add(config.theme);
@@ -401,7 +401,10 @@
             response.element.classList.add("active");
 
             if (chapter.bounds) {
-              map.fitBounds(chapter.bounds);
+              map.setBearing(chapter.location.bearing)
+              map.setPitch(chapter.location.pitch)
+              map.fitBounds(chapter.bounds)
+              ;
             } else {
               map[chapter.mapAnimation || "flyTo"](chapter.location);
             }

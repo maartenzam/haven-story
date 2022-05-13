@@ -10,14 +10,14 @@ var config = {
     header: {
         nl: {
             title: 'De weg naar een wereldhaven',
-            subtitle: 'Hier kan nog een subtitle komen',
-            byline: 'Een initiatief van Port of Antwerp Bruges',
-            footer: 'Footer content NL'
+            subtitle: 'Fusiehaven zet België op de wereldkaart',
+            //byline: 'Een initiatief van Port of Antwerp Bruges',
+            footer: 'Realisatie door Content Republic - 2022'
         },
         fr: {
             title: 'La route vers un port mondial',
             subtitle: 'Subtitre FR',
-            byline: 'Offert par xxxx',
+            //byline: 'Offert par xxxx',
             footer: 'Footer content FR',
         }
     },
@@ -31,7 +31,7 @@ var config = {
             alignment: 'fully',
             hidden: false,
             title: {
-                nl: 'Titeltje?',
+                nl: 'Poort tot de wereld',
                 fr: 'Petit titre'
             },
             description: {
@@ -179,7 +179,7 @@ var config = {
                 fr: 'Petit titre'
             },
             description: {
-                nl: 'De site in Antwerpen beslaat 11.246 hectare, dat zijn 16.600 voetbalvelden, en daarop zijn 900 bedrijven gevestigd, goed voor 62.635 rechtstreekse banen. Dat levert een toegevoegde waarde van bijna 19 miljard euro op, goed voor 4,1 procent van het Vlaamse bbp.',
+                nl: 'De site in Antwerpen beslaat 11.246 hectare, dat zijn 16.600 voetbalvelden, en daarop zijn 900 bedrijven gevestigd, goed voor 62.635 rechtstreekse banen. Dat levert een toegevoegde waarde van bijna 19 miljard euro op, goed voor 4,1 procent van het Belgische bbp.',
                 fr: 'Texte FR'
             },
             location: {
@@ -221,7 +221,7 @@ var config = {
                 fr: 'Petit titre'
             },
             description: {
-                nl: 'De site in Brugge beslaat 2.857 hectare, dat zijn 4.220 voetbalvelden, en daarop zijn 400 bedrijven gevestigd, goed voor 10.000 rechtstreekse banen. Dat levert een toegevoegde waarde van bijna 1,8 miljard euro op, goed voor 0,4 procent van het Vlaamse bbp.',
+                nl: 'De site in Brugge beslaat 2.857 hectare, dat zijn 4.220 voetbalvelden, en daarop zijn 400 bedrijven gevestigd, goed voor 10.000 rechtstreekse banen. Dat levert een toegevoegde waarde van bijna 1,8 miljard euro op, goed voor 0,4 procent van het Belgische bbp.',
                 fr: 'Texte FR'
             },
             location: {
@@ -303,7 +303,7 @@ var config = {
             onChapterEnter: [],
             onChapterExit: []
         },
-        {
+        /*{
             id: 'outro',
             alignment: 'full',
             hidden: false,
@@ -325,6 +325,151 @@ var config = {
             },
             mapAnimation: 'flyTo',
             rotateAnimation: true,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
+        },*/
+        {
+            id: 'windfarm',
+            alignment: 'center',
+            hidden: false,
+            title: {
+                nl: 'Windparken',
+                fr: 'Petit titre'
+            },
+            description: {
+                nl: "Windparken op zee wekken groene stroom op. Naast de lokale productie komt daar de buitenlandse import van waterstof en waterstofdragers bij.",
+                fr: 'Texte FR'
+            },
+            //bounds: [[2.7, 51.5],[3.1, 51.74]],
+            location: {
+                center: [2.9, 51.62],
+                zoom: 9,
+                pitch: 45,
+                bearing: 160,
+                speed: 0.2
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [{
+                layer: 'windturbines-0',
+                opacity: 0.4,
+                duration: 500
+             },{
+                layer: 'windturbines-1',
+                opacity: 0.4,
+                duration: 500
+             },{
+                layer: 'windturbines-2',
+                opacity: 1,
+                duration: 500
+             },{
+                layer: 'energycables',
+                opacity: 0.4,
+                duration: 500
+             },],
+            onChapterExit: []
+        },
+        {
+            id: 'lng-terminal',
+            alignment: 'center',
+            hidden: false,
+            title: {
+                nl: 'Fluxys LNG terminal',
+                fr: 'Petit titre'
+            },
+            description: {
+                nl: "De site van Zeebrugge is belangrijk om groene waterstof over te slaan en om te zetten.",
+                fr: 'Texte FR'
+            },
+            //bounds: [[2.7, 51.5],[3.1, 51.74]],
+            location: {
+                center: [3.22080, 51.35444],
+                zoom: 15.3,
+                pitch: 0,
+                bearing: 0,
+                speed: 0.5
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        {
+            id: 'pijleidingen',
+            alignment: 'center',
+            hidden: false,
+            title: {
+                nl: 'Pijplijninfrastructuur',
+                fr: 'Petit titre'
+            },
+            description: {
+                nl: "Tekst pijplijninfrastructuur.",
+                fr: 'Texte FR'
+            },
+            //bounds: [[2.7, 51.5],[3.1, 51.74]],
+            location: {
+                center: [4.34706, 51.25557],
+                zoom: 9,
+                pitch: 70,
+                bearing: 100,
+                speed: 0.5
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        {
+            id: 'basf',
+            alignment: 'center',
+            hidden: false,
+            title: {
+                nl: 'BASF en proefprojecten',
+                fr: 'Petit titre'
+            },
+            description: {
+                nl: "Het havengebied in Antwerpen is dé plaats waar de energietransitie vorm krijgt. Het voert waterstof en waterstofdragers in, slaat ze op en zet ze om naar bouwstenen voor de chemische sector en voor het Europese hinterland.",
+                fr: 'Texte FR'
+            },
+            //bounds: [[2.7, 51.5],[3.1, 51.74]],
+            location: {
+                center: [4.28089, 51.3636],
+                zoom: 14,
+                pitch: 0,
+                bearing: 0,
+                speed: 0.5
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        {
+            id: 'outro',
+            alignment: 'center',
+            hidden: false,
+            title: {
+                nl: 'Outro',
+                fr: 'Petit titre'
+            },
+            description: {
+                nl: "Outro",
+                fr: 'Texte FR'
+            },
+            bounds: [[2.8, 50.7],[5, 51.5]],
+            location: {
+                center: [-58.54195, -34.71600],
+                zoom: 4,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
             callback: '',
             onChapterEnter: [],
             onChapterExit: []
