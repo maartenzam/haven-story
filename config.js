@@ -35,7 +35,7 @@ var config = {
                 fr: 'Petit titre'
             },
             description: {
-                nl: 'Met een doorvoer van 289 miljoen ton per jaar vormt Port of Antwerp-Bruges een belangrijk knooppunt in de wereldwijde handel. Zijn centrale ligging met uitgebreide verbindingen en uitstekende infrastructuur maken de haven met zijn twee sites een optimale keuze voor iedereen die internationaal zaken wil doen.',
+                nl: 'Met een doorvoer van 289 miljoen ton per jaar vormt Port of Antwerp-Bruges een belangrijk knooppunt in de wereldwijde handel. Haar centrale ligging met uitgebreide verbindingen en uitstekende infrastructuur maken de haven met haar twee sites een optimale keuze voor iedereen die internationaal zaken wil doen.',
                 fr: 'Texte en francais'
             },
             location: {
@@ -69,11 +69,11 @@ var config = {
             alignment: 'center',
             hidden: false,
             title: {
-                nl: 'Diep met het Europese hinterland verbonden',
+                nl: 'Sterk verbonden met de wereld',
                 fr: 'Petit titre'
             },
             description: {
-                nl: 'Meer dan 80 procent van de wereldhandel verloopt via de zee. Geen enkele andere zeehaven ligt zo diep in Europa als Port of Antwerp-Bruges. Daarmee vormt hij de snelste en goedkoopste verbinding met het Europese achterland en is hij ook nog eens ecologisch een verantwoorde keuze.',
+                nl: 'Geen enkele zeehaven ligt zo diep in Europa. Daarmee vormt ze de snelste en goedkoopste verbinding met het Europese achterland. Maar met meer dan 300 lijndiensten en 800 bestemmingen is Port of Antwerp-Bruges verbonden is met alle continenten, van het westen tot het verre oosten.',
                 fr: 'Texte FR'
             },
             location: {
@@ -132,7 +132,7 @@ var config = {
                 fr: 'Petit titre'
             },
             description: {
-                nl: 'De nieuwe fusiehaven wordt de grootste Europese exporthaven en is de veertiende containerhaven in de wereld (in TEU). Daarmee neemt Port of Antwerp-Bruges een opvallende plek in op de lijst van wereldhavens, die wordt gedomineerd door spelers in Azië, met Shanghai op kop.',
+                nl: 'De haven huisvest de grootste chemische cluster in Europa, is de grootste haven voor overslag van voertuigen wereldwijd en staat in de top 15 van de grootste containerhavens in de wereld. Daarmee neemt Port of Antwerp-Bruges een opvallende plek in op de lijst van wereldhavens, die wordt gedomineerd door spelers in Azië, met Shanghai op kop.',
                 fr: 'Texte FR'
             },
             location: {
@@ -175,11 +175,11 @@ var config = {
             alignment: 'fully',
             hidden: false,
             title: {
-                nl: 'Twee economische motoren',
+                nl: 'Antwerpen: bananen en staal',
                 fr: 'Petit titre'
             },
             description: {
-                nl: 'De site in Antwerpen beslaat 11.246 hectare, dat zijn 16.600 voetbalvelden, en daarop zijn 900 bedrijven gevestigd, goed voor 62.635 rechtstreekse banen. Dat levert een toegevoegde waarde van bijna 19 miljard euro op, goed voor 4,1 procent van het Belgische bbp.',
+                nl: "<p>De site in Antwerpen beslaat 11.246 hectare, dat zijn 16.600 voetbalvelden, en daarop zijn 900 bedrijven gevestigd, goed voor 62.635 rechtstreekse banen. Dat levert een toegevoegde waarde van bijna 19 miljard euro op, goed voor 4,1 procent van het Belgische bbp.</p><p>In Antwerpen komen vooral producten aan als cacao, koffie, staal, boomstammen, papier, mout, bananen, alles in containers (tuinmeubelen, kleding, elektronica, bouwmaterialen, …), plastic pellets, medicijnen, vaccins, enz.</p>",
                 fr: 'Texte FR'
             },
             location: {
@@ -217,11 +217,11 @@ var config = {
             alignment: 'center',
             hidden: false,
             title: {
-                nl: 'Twee economische motoren',
+                nl: 'Zeebrugge: kiwi’s en auto’s',
                 fr: 'Petit titre'
             },
             description: {
-                nl: 'De site in Brugge beslaat 2.857 hectare, dat zijn 4.220 voetbalvelden, en daarop zijn 400 bedrijven gevestigd, goed voor 10.000 rechtstreekse banen. Dat levert een toegevoegde waarde van bijna 1,8 miljard euro op, goed voor 0,4 procent van het Belgische bbp.',
+                nl: '<p>De site in Brugge beslaat 2.857 hectare, dat zijn 4.220 voetbalvelden, en daarop zijn 400 bedrijven gevestigd, goed voor 10.000 rechtstreekse banen. Dat levert een toegevoegde waarde van bijna 1,8 miljard euro op, goed voor 0,4 procent van het Belgische bbp.</p><p>In Zeebrugge komt 15 procent van het Europese gas aan. Verder ook: kiwi’s, auto’s, windturbines, verse vis, ferry- en cruiseverkeer</p>',
                 fr: 'Texte FR'
             },
             location: {
@@ -258,14 +258,14 @@ var config = {
             alignment: 'fully',
             hidden: false,
             title: {
-                nl: 'Een enorme toegevoegde waarde',
+                nl: 'Samen een enorme toegevoegde waarde',
                 fr: 'Petit titre'
             },
             description: {
-                nl: 'Port of Antwerp-Bruges beslaat 14.322 hectare, dat zijn 20.820 voetbalvelden, en daarop zijn 1.400 bedrijven gevestigd die 164.000 directe en indirecte banen opleveren. Samen levert dat een toegevoegde waarde van 20,8 miljard euro op, goed voor 4,5 procent van het Vlaamse bbp.',
+                nl: '<p>Port of Antwerp-Bruges beslaat 14.322 hectare, dat zijn 20.820 voetbalvelden, en daarop zijn 1.400 bedrijven gevestigd die 164.000 directe en indirecte banen opleveren. Samen levert dat een toegevoegde waarde van 20,8 miljard euro op, goed voor 4,5 procent van het Vlaamse bbp.</p><p>Port of Antwerp-Bruges beschikt over een unieke mulitmodale mix voor duurzaam goederenvervoer van, naar en in de beide havensites. Dat gaat zowel over zee, langs binnenwateren, estuaire vaart, spoorwegen, pijpleiding en over de weg.</p>',
                 fr: 'Texte FR'
             },
-            bounds: [[2.8, 50.7],[5, 51.5]],
+            bounds: [[2.7, 50.7],[5, 51.5]],
             location: {
                 center: [-58.54195, -34.71600],
                 zoom: 4,
@@ -283,14 +283,14 @@ var config = {
             alignment: 'fully',
             hidden: false,
             title: {
-                nl: 'Uitstekend vertakt naar binnen- en buitenland',
+                nl: 'Tegen 2050 bouwt Port of Antwerp-Bruges de CO2-uitstoot volledig af',
                 fr: 'Petit titre'
             },
             description: {
-                nl: 'In Port of Antwerp-Bruges vind je een unieke mix van bevoorrading, maritiem transport en industrie. In Zeebrugge komt 15 procent van het Europese gas aan, naast kiwi’s, auto’s, windturbines, verse vis, ferry- en cruiseverkeer. In Antwerpen gaat het over cacao, koffie, staal, boomstammen, papier, mout, bananen, alles in containers (tuinmeubelen, kleding, elektronica, bouwmaterialen, …), plastic pellets, medicijnen, vaccins, enz. Bovendien beschikt Port of Antwerp over een unieke mulitmodale mix voor duurzaam goederenvervoer van, naar en in de beide havensites. Dat gaat zowel over zee, langs binnenwateren, estuaire vaart, spoorwegen, pijpleiding en over de weg.',
+                nl: '',
                 fr: 'Texte FR'
             },
-            bounds: [[2.8, 50.7],[5, 51.5]],
+            bounds: [[2.7, 50.7],[5, 51.5]],
             location: {
                 center: [-58.54195, -34.71600],
                 zoom: 4,
@@ -334,11 +334,11 @@ var config = {
             alignment: 'center',
             hidden: false,
             title: {
-                nl: 'Windparken',
+                nl: 'Windenergie op zee',
                 fr: 'Petit titre'
             },
             description: {
-                nl: "Windparken op zee wekken groene stroom op. Naast de lokale productie komt daar de buitenlandse import van waterstof en waterstofdragers bij.",
+                nl: "Windparken op zee wekken groene stroom op. Op dit moment zijn er acht windparken op zee, goed voor 2,2 GW windenergie. De capaciteit breidt tegen 2030 uit tot 5,8 GW. De windenergie wordt aangevuld met buitenlandse import van waterstof en waterstofdragers.",
                 fr: 'Texte FR'
             },
             //bounds: [[2.7, 51.5],[3.1, 51.74]],
@@ -376,19 +376,19 @@ var config = {
             alignment: 'center',
             hidden: false,
             title: {
-                nl: 'Fluxys LNG terminal',
+                nl: 'Groene waterstofproductie',
                 fr: 'Petit titre'
             },
             description: {
-                nl: "De site van Zeebrugge is belangrijk om groene waterstof over te slaan en om te zetten.",
+                nl: "De site van Zeebrugge is belangrijk om groene waterstof over te slaan en om te zetten. ",
                 fr: 'Texte FR'
             },
             //bounds: [[2.7, 51.5],[3.1, 51.74]],
             location: {
-                center: [3.22080, 51.35444],
-                zoom: 15.3,
-                pitch: 0,
-                bearing: 0,
+                center: [3.2102606,51.3301086],
+                zoom: 13.5,
+                pitch: 45,
+                bearing: 160,
                 speed: 0.5
             },
             mapAnimation: 'flyTo',
@@ -402,20 +402,20 @@ var config = {
             alignment: 'center',
             hidden: false,
             title: {
-                nl: 'Pijplijninfrastructuur',
+                nl: 'Verbonden via pijpleidingen',
                 fr: 'Petit titre'
             },
             description: {
-                nl: "Tekst pijplijninfrastructuur.",
+                nl: "Via een uitgebreide pijplijninfrastructuur gaat waterstof van Zeebrugge naar Antwerpen.",
                 fr: 'Texte FR'
             },
             //bounds: [[2.7, 51.5],[3.1, 51.74]],
             location: {
-                center: [4.34706, 51.25557],
-                zoom: 9,
+                center: [4.27,51.27],
+                zoom: 13,
                 pitch: 70,
                 bearing: 100,
-                speed: 0.5
+                speed: 0.3
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -428,17 +428,17 @@ var config = {
             alignment: 'center',
             hidden: false,
             title: {
-                nl: 'BASF en proefprojecten',
+                nl: 'Bouwstenen voor de industrie',
                 fr: 'Petit titre'
             },
             description: {
-                nl: "Het havengebied in Antwerpen is dé plaats waar de energietransitie vorm krijgt. Het voert waterstof en waterstofdragers in, slaat ze op en zet ze om naar bouwstenen voor de chemische sector en voor het Europese hinterland.",
+                nl: "Het havengebied in Antwerpen is dé plaats waar de energietransitie vorm krijgt. Het voert waterstof en waterstofdragers in, slaat ze op en zet ze om naar bouwstenen voor de chemische sector en voor het Europese hinterland. Afgevangen CO2 wordt opgeslagen en getransporteerd van het hinterland en de chemische cluster in Antwerpen naar lege gasvelden in de Noordzee.",
                 fr: 'Texte FR'
             },
             //bounds: [[2.7, 51.5],[3.1, 51.74]],
             location: {
-                center: [4.28089, 51.3636],
-                zoom: 14,
+                center: [4.30,51.31],
+                zoom: 11.5,
                 pitch: 0,
                 bearing: 0,
                 speed: 0.5
@@ -454,14 +454,14 @@ var config = {
             alignment: 'center',
             hidden: false,
             title: {
-                nl: 'Outro',
+                nl: '',
                 fr: 'Petit titre'
             },
             description: {
-                nl: "Outro",
+                nl: "De fusie van beide havens is een wereldprimeur, maar tegelijk noodzakelijk om de steile, duurzame ambities waar te kunnen maken: dé energiepoort naar Europa worden en klimaatneutraal zijn tegen 2050. Met dank aan de expertise en de complementariteit van beide havens. De blauwdruk voor een groene toekomst voor Antwerpen en Zeebrugge is klaar, de eerste stappen worden nu al gezet.",
                 fr: 'Texte FR'
             },
-            bounds: [[2.8, 50.7],[5, 51.5]],
+            bounds: [[2.7, 50.7],[5, 51.5]],
             location: {
                 center: [-58.54195, -34.71600],
                 zoom: 4,
